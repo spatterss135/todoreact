@@ -1,13 +1,53 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root {
+  display: flex;
+  justify-content: center;
+}
+
+.container{
+  width: 50vw;
+  border: 1px solid black;
+  border-radius: 1em;
+  padding: 0 1rem;
+  padding-bottom: 2rem;
+
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.header > button {
+  font-weight: 600;
+  font-size: 1.5rem;
+  background-color: rgb(0, 110, 255);
+  color: white;
+  border: 1px solid black;
+  border-radius: .5rem;
+}
+
+.TaskLine {
+  margin:5px;
+  padding:5px;
+  border: 1px solid black;
+  border-radius: .3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task {
+  display: flex;
+}
+
+
+
+button{
+  height: fit-content;
 }
